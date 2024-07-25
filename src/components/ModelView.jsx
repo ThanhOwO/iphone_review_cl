@@ -1,4 +1,4 @@
-import { Html, OrbitControls, PerspectiveCamera, View } from '@react-three/drei'
+import { OrbitControls, PerspectiveCamera, View } from '@react-three/drei'
 import React, { Suspense, useMemo } from 'react'
 import Lights from './Lights'
 import Model from './Model/iPhone'
@@ -16,7 +16,7 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
       className={`w-full h-full absolute ${index === 2 ? 'right-[-100%]' : ''}`}
     >
       {/* Ambient Light */}
-      <ambientLight intensity={0.3} />
+      <ambientLight intensity={1} />
 
       <PerspectiveCamera makeDefault position={[0, 0, 4]} />
 
@@ -29,6 +29,7 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
         rotateSpeed={0.4}
         target={targetVector}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
+        enablePan={false}
       />
 
       <group ref={groupRef} name={index === 1 ? 'small' : 'large'} position={[0, 0, 0]}>
