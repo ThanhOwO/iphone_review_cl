@@ -5,11 +5,17 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ⚙️ Tech Stack
 
 React.js
+
 Three.js
+
 React Three Fiber
+
 React Three Drei
+
 GSAP (Greensock)
+
 Vite
+
 Tailwind CSS
 
 🔋 Features
