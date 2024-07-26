@@ -4,6 +4,8 @@ export {default as Highlights } from './Highlights'
 export {default as Model } from './Model'
 export {default as Feature } from './Feature'
 export {default as Showcase } from './Showcase'
+export {default as Footer } from './Footer'
+
 
 
 
