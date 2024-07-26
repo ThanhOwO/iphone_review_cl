@@ -27,6 +27,17 @@ const Showcase = () => {
       duration: 1,
       ease: 'power2.inOut'
     })
+
+    gsap.to('#videoShowcase', {
+      scrollTrigger: {
+          trigger: '#videoShowcase',
+          toggleActions: 'play pause restart reverse',
+          start: '-10% bottom',
+        },
+        onComplete: () => {
+          videoRef.current.play();
+        }
+    })
   }, [])
 
   return (
@@ -58,6 +69,7 @@ const Showcase = () => {
             </div>
               <div className='hiw-video'>
                 <video 
+                  id='videoShowcase'
                   className='pointer-events-none' 
                   playsInline 
                   preload='none'
