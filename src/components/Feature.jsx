@@ -30,19 +30,16 @@ const Feature = () => {
     <section className='h-full common-padding bg-zinc relative overflow-hidden'>
         <div className='screen-max-width'>
             <div className='mb-12 w-full'>
-                <h1 id='feature_title' className='section-heading'>
+                <h2 id='feature_title' className='section-heading'>
                     Explore the full story.
-                </h1>
+                </h2>
             </div>
 
             <div className='flex flex-col justify-center items-center overflow-hidden'>
                 <div className='mt-32 mb-24 pl-24'>
-                    <h2 className='text-5xl lg:text-7xl font-semibold'>
-                        iPhone.
-                    </h2>
-                    <h2 className='text-5xl lg:text-7xl font-semibold'>
+                    <h3 className="text-5xl lg:text-7xl font-semibold">iPhone.<br />
                         Forged in titanium.
-                    </h2>
+                    </h3>
                 </div>
 
                 <div className='flex-center flex-col sm:px-10'>

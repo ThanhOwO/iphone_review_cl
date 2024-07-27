@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +103,7 @@ canvas {
   }
 
   .hiw-video {
-    @apply absolute w-[95%] h-[90%] rounded-[36px] overflow-hidden md:rounded-[56px]
+    @apply absolute w-[95%] h-[84%] rounded-[36px] overflow-hidden md:rounded-[56px]
   }
 
   .hiw-text-container {

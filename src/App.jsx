@@ -2,7 +2,7 @@ import { Feature, Footer, Hero, Highlights, Model, Navbar, Showcase } from "./co
 
 const App = () => {
   return (
-    <main className="bg-black">
+    <main className="bg-black overflow-auto">
       <Navbar/>
       <Hero/>
       <Highlights/>

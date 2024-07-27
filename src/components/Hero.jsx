@@ -5,7 +5,7 @@ import { heroVideo, smallHeroVideo } from '../utils'
 
 const Hero = () => {
 
-  const [videoSrc, setVideoSrc] = useState(window.innerWidth < 760 ? smallHeroVideo : heroVideo)
+  const [videoSrc, setVideoSrc] = useState(window.innerWidth < 640 ? smallHeroVideo : heroVideo)
 
   useGSAP(() => {
     gsap.to('#hero', {opacity: 1, duration: 1, delay: 1.5})
@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section className='w-full nav-height bg-black relative'>
       <div className='h-5/6 w-full flex-center flex-col'>
-        <p id='hero' className='hero-title'>iPhone 15 Pro</p>
+        <h1 id='hero' className='hero-title'>iPhone 15 Pro</h1>
         <div className='md:w-10/12 w-9/12'>
           <video autoPlay muted playsInline={true} key={videoSrc}>
             <source src={videoSrc} type='video/mp4'/>
